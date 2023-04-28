@@ -31,12 +31,22 @@ exports.seed = async function(knex) {
     {
       icindekiler_id:1,
       icindekiler_adi:'zeytinyağı'
+    },
+    {
+      icindekiler_id:2,
+      icindekiler_adi:'makarna'
     }
   ])
   await knex('Icindekiler_Adimlar').insert([
     {
       adim_id:1,
       icindekiler_id:1,
+      tarif_id:1,
+      miktar:1
+    },
+    {
+      adim_id:2,
+      icindekiler_id:2,
       tarif_id:1,
       miktar:1
     }
